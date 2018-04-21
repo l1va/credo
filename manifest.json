@@ -2,7 +2,7 @@
 	"name": "one click Cite & SciHub",
 	"version": "0.0.2",
 	"description": "Download article from SciHub and Citation in one click on google scholar!",
-	"permissions": [],
+	"permissions": ["<all_urls>"],
 	"icons": {
 		"16": "images/icon-16.png",
 		"32": "images/icon-32.png",
