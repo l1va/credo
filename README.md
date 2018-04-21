@@ -1,6 +1,6 @@
 credo
 ===============
-Chrome extension to download citation and article pdf from SciHub in one click from google scholar 
+Chrome extension to download Citation and article pdf from SciHub in one click from google scholar 
 
 TODO: 
 Add options to change endNote on other citation formats
@@ -11,11 +11,11 @@ Result:
 
 Install:
 -----
-![Installation gif](gifs/install.gif)
-
 Steps:
 * Download zip
 * Extract from zip
-* Open Chrome extensions
+* Open chrome extensions
 * Set 'developer mode'
 * 'Load unpacked' directory with extension
+
+![Installation gif](gifs/install.gif)
