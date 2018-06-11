@@ -13,8 +13,8 @@
 
 function onClick(article) {
     return function() {
-    	downloadSciHub(article);
-    	downloadEndNote(article);
+	downloadSciHub(article);
+	downloadEndNote(article);
     };
 }
 
@@ -27,9 +27,21 @@ function downloadEndNote(article) {
 	         	var endNoteLink = elementExists.children[1].href; // 1 for EndNote
 	         	console.log("endNoteLink: "+ endNoteLink);
 	         	window.open(endNoteLink,"_self"); //download
+			//downloadURI(endNoteLink, "endnote.enw")
+			console.log("endnote success download")
 	        }
 	        document.getElementById("gs_cit-x").click(); //close Cite window
-    	},500); //ms to show window, need to be encreased if not working 
+	},1500); //ms to show window, need to be encreased if not working
+}
+
+function downloadURI(uri, name) {
+	var link = document.createElement("a");
+	link.download = name;
+	link.href = uri;
+	document.body.appendChild(link);
+	link.click();
+	document.body.removeChild(link);
+	delete link;
 }
 
 function downloadSciHub(article) {
